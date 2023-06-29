@@ -194,6 +194,25 @@ body {
 h1 {
   font-size: 24px;
   font-weight: bold;
+  width: 400px;
+  height: 100px;
+  animation-name:rotate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.box:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .browse {
